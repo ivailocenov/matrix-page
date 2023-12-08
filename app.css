@@ -1,87 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background: black;
-
+    background-color: #222;
 }
 
-.container {
+.animated-text {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-
-
-    p {
-        text-transform: uppercase;
-        font-family: 'Black Han Sans', sans-serif;
-        font-size: 100vh;
-        text-align: center;
-        margin: 0px 20px;
-        transition: all 0.2s ease-in-out;
-    }
 }
 
-
-.on {
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-    text-shadow: 0px 0px 8px rgb(255, 255, 255), 0px 0px 20px rgba(255, 255, 255, 0.5)
+.animated-text ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.white {
-    color: white;
+.animated-text ul li {
+    display: inline-block;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    color: #22A7F0;
+    opacity: 1;
+    transition: all 2.5s ease 0s;
 }
 
-#reload-button {
-
-    background: black;
-    color: rgb(192, 192, 192);
-    border: 1px solid rgb(26, 26, 26);
-    padding: 20px;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-        background: rgb(11, 11, 11);
-        border-color: black;
-
-    }
+.animated-text ul li:first-child {
+    margin-left: 0px;
 }
 
-.slider {
-    margin: 20px 0px 0px 20px;
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+.animated-text.hidden-text ul li {
+    opacity: 0;
+}
 
+.animated-text.hidden-text ul li:nth-child(1) {
+    transform: translate(-200px, -180px);
+}
 
-    p {
-        color: white;
-        margin-bottom: 10px;
-    }
+.animated-text.hidden-text ul li:nth-child(2) {
+    transform: translate(100px, 180px);
+}
 
-    input[type=range] {
-        appearance: none;
-        -webkit-appearance: none;
-        background-color: rgb(35, 35, 35);
-        height: 10px;
-    }
+.animated-text.hidden-text ul li:nth-child(3) {
+    transform: translate(250px, 50px)
+}
 
-    input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        background-color: #ffd000;
-        width: 10px;
-        height: 26px;
-    }
+.animated-text.hidden-text ul li:nth-child(4) {
+    transform: translate(-80px, -100px)
+}
+
+.animated-text.hidden-text ul li:nth-child(5) {
+    transform: translate(200px, -180px)
+}
+
+.animated-text.hidden-text ul li:nth-child(6) {
+    transform: translate(10px, -80px)
+}
+
+.animated-text.hidden-text ul li:nth-child(7) {
+    transform: translate(-250px, 70px)
+}
+
+.animated-text.hidden-text ul li:nth-child(8) {
+    transform: translate(-240px, 140px)
+}
+
+.animated-text.hidden-text ul li:nth-child(9) {
+    transform: translate(290px, -100px)
+}
+
+.animated-text.hidden-text ul li:nth-child(10) {
+    transform: translate(60px, -170px)
+}
+
+.animated-text.hidden-text ul li:nth-child(11) {
+    transform: translate(190px, -20px)
+}
+
+.animated-text.hidden-text ul li:nth-child(12) {
+    transform: translate(-200px, -180px)
 }
