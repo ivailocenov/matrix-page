@@ -1,4 +1,4 @@
-const text = "flickering";
+const text = "MATRIX";
 
 
 const fadeSlider = document.getElementById("fade");

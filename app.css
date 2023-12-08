@@ -7,7 +7,7 @@
 }
 
 body {
-    background: black;
+    background: rgb(85, 190, 15);
 
 }
 
@@ -46,7 +46,7 @@ body {
 
 #reload-button {
 
-    background: black;
+    background: rgb(8, 30, 2);
     color: rgb(192, 192, 192);
     border: 1px solid rgb(26, 26, 26);
     padding: 20px;
