@@ -7,7 +7,7 @@
 }
 
 body {
-    background: rgb(85, 190, 15);
+    background: black;
 
 }
 
@@ -21,13 +21,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10px;
 
 
     p {
         text-transform: uppercase;
         font-family: 'Black Han Sans', sans-serif;
-        font-size: 40vh;
+        font-size: 100vh;
         text-align: center;
         margin: 0px 20px;
         transition: all 0.2s ease-in-out;
@@ -46,7 +46,7 @@ body {
 
 #reload-button {
 
-    background: rgb(8, 30, 2);
+    background: black;
     color: rgb(192, 192, 192);
     border: 1px solid rgb(26, 26, 26);
     padding: 20px;
@@ -67,8 +67,7 @@ body {
 
 
     p {
-        color: rgb(37, 125, 10);
-        font-size: 40px;
+        color: white;
         margin-bottom: 10px;
     }
 
