@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+
+    p {
+        text-transform: uppercase;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 10vh;
+        text-align: center;
+        margin: 0px 20px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+
+.on {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px rgb(255, 255, 255), 0px 0px 20px rgba(255, 255, 255, 0.5)
+}
+
+.white {
+    color: white;
+}
+
+#reload-button {
+
+    background: black;
+    color: rgb(192, 192, 192);
+    border: 1px solid rgb(26, 26, 26);
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background: rgb(11, 11, 11);
+        border-color: black;
+
+    }
+}
+
+.slider {
+    margin: 20px 0px 0px 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+
+    p {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    input[type=range] {
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: rgb(35, 35, 35);
+        height: 10px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: #ffd000;
+        width: 10px;
+        height: 26px;
+    }
+}
