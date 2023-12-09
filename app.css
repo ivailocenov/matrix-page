@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #1ded35;
+    background-color: #7fb585;
 }
 
 .animated-text {
@@ -25,7 +25,7 @@ body {
     font-size: 45px;
     text-transform: uppercase;
     margin-left: 15px;
-    color: #22A7F0;
+    color: #a8d0e6;
     opacity: 1;
     transition: all 2.5s ease 0s;
 }
